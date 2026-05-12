@@ -1,174 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Runner — Privacy Policy</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; }
-.header { background: #0d1220; border-bottom: 1px solid rgba(0,230,255,0.12); padding: 48px 24px 36px; text-align: center; }
-.logo { font-size: 32px; font-weight: 900; letter-spacing: 6px; color: #fff; margin-bottom: 8px; }
-.logo span { color: #00e5ff; }
-.tagline { font-size: 11px; color: rgba(255,255,255,0.35); letter-spacing: 3px; text-transform: uppercase; }
-.badge { display: inline-block; margin-top: 16px; background: rgba(0,230,255,0.08); border: 1px solid rgba(0,230,255,0.25); color: #00e5ff; font-size: 11px; font-weight: 700; padding: 5px 14px; border-radius: 20px; letter-spacing: 1px; }
-.container { max-width: 800px; margin: 0 auto; padding: 48px 24px 80px; }
-.meta { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 20px 24px; margin-bottom: 40px; display: flex; gap: 32px; flex-wrap: wrap; }
-.meta-item { font-size: 13px; color: rgba(255,255,255,0.4); }
-.meta-item strong { color: #fff; display: block; font-size: 14px; margin-bottom: 2px; }
-.summary { background: rgba(0,230,255,0.05); border: 1px solid rgba(0,230,255,0.15); border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; }
-.summary p { color: rgba(255,255,255,0.65); font-size: 14px; margin: 0; }
-.summary strong { color: #00e5ff; }
-h2 { font-size: 19px; font-weight: 800; color: #fff; margin: 42px 0 14px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.07); }
-h3 { font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.8); margin: 22px 0 8px; text-transform: uppercase; letter-spacing: 0.5px; }
-p { font-size: 14px; color: rgba(255,255,255,0.5); margin-bottom: 14px; }
-ul { margin: 10px 0 16px; padding-left: 0; list-style: none; }
-ul li { font-size: 14px; color: rgba(255,255,255,0.5); padding: 4px 0 4px 20px; position: relative; }
-ul li::before { content: '›'; position: absolute; left: 4px; color: #00e5ff; font-weight: 700; }
-table { width: 100%; border-collapse: collapse; margin: 14px 0 22px; font-size: 13px; border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; overflow: hidden; }
-th { text-align: left; padding: 10px 14px; background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.6); font-weight: 700; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
-td { padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.05); color: rgba(255,255,255,0.45); vertical-align: top; }
-tr:last-child td { border-bottom: none; }
-td:first-child { color: rgba(255,255,255,0.7); font-weight: 600; }
-a { color: #00e5ff; text-decoration: none; }
-.warn { background: rgba(255,160,0,0.06); border: 1px solid rgba(255,160,0,0.18); border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-size: 13px; color: rgba(255,200,80,0.75); }
-.contact { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 24px; margin-top: 20px; }
-.footer { text-align: center; padding: 28px 24px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 12px; color: rgba(255,255,255,0.2); }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Own-it</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0A0A0F;
+      --surface:   #12121A;
+      --border:    #1E1E2E;
+      --cyan:      #00E5FF;
+      --cyan-dim:  rgba(0, 229, 255, 0.12);
+      --cyan-glow: rgba(0, 229, 255, 0.25);
+      --text:      #E8E8F0;
+      --muted:     #8888A0;
+      --radius:    14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(180deg, rgba(0,229,255,0.06) 0%, transparent 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+
+    .logo-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: var(--cyan-dim);
+      border: 1px solid var(--cyan-glow);
+      margin-bottom: 20px;
+    }
+
+    .logo-mark svg { width: 32px; height: 32px; fill: var(--cyan); }
+
+    header h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #fff;
+    }
+
+    header h1 span { color: var(--cyan); }
+
+    .subtitle {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .updated-badge {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 4px 14px;
+      border-radius: 999px;
+      background: var(--cyan-dim);
+      border: 1px solid var(--cyan-glow);
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 48px;
+    }
+
+    .toc h2 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--cyan);
+      margin-bottom: 16px;
+    }
+
+    .toc ol {
+      list-style: none;
+      counter-reset: toc;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 24px;
+    }
+
+    @media (max-width: 540px) { .toc ol { grid-template-columns: 1fr; } }
+
+    .toc li { counter-increment: toc; }
+
+    .toc a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.15s;
+    }
+
+    .toc a::before {
+      content: counter(toc) ". ";
+      color: var(--cyan);
+      font-weight: 600;
+    }
+
+    .toc a:hover { color: var(--cyan); }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 48px;
+      scroll-margin-top: 24px;
+    }
+
+    section h2 {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--cyan-dim);
+      flex-shrink: 0;
+    }
+
+    .icon svg { width: 18px; height: 18px; fill: var(--cyan); }
+
+    p { margin-bottom: 14px; color: var(--text); }
+
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Cards ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--cyan);
+      margin-bottom: 8px;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card ul li {
+      font-size: 14px;
+      color: var(--muted);
+      padding: 3px 0;
+      padding-left: 14px;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: "·";
+      position: absolute;
+      left: 0;
+      color: var(--cyan);
+      font-weight: 700;
+    }
+
+    /* ── Info blocks ── */
+    .info-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--cyan);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+
+    .info-block p { color: var(--muted); font-size: 15px; }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin-top: 20px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    thead tr {
+      background: var(--cyan-dim);
+    }
+
+    thead th {
+      text-align: left;
+      padding: 12px 16px;
+      color: var(--cyan);
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.1s;
+    }
+
+    tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+    tbody td {
+      padding: 12px 16px;
+      color: var(--muted);
+      vertical-align: top;
+    }
+
+    tbody td:first-child { color: var(--text); font-weight: 500; }
+
+    /* ── Pill list ── */
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .pill {
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: var(--cyan-dim);
+      border: 1px solid var(--cyan-glow);
+      color: var(--cyan);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .pill-muted {
+      background: var(--surface);
+      border-color: var(--border);
+      color: var(--muted);
+    }
+
+    /* ── Rights checklist ── */
+    .rights-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 540px) { .rights-list { grid-template-columns: 1fr; } }
+
+    .rights-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .check {
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      background: var(--cyan-dim);
+      border: 1px solid var(--cyan-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .check svg { width: 11px; height: 11px; fill: var(--cyan); }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: linear-gradient(135deg, rgba(0,229,255,0.08) 0%, rgba(0,229,255,0.03) 100%);
+      border: 1px solid var(--cyan-glow);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-top: 20px;
+    }
+
+    .contact-card p { color: var(--muted); }
+
+    .contact-card a {
+      color: var(--cyan);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a { color: var(--cyan); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
-<div class="header">
-  <div class="logo">RUN<span>NER</span></div>
-  <div class="tagline">Own the Streets</div>
-  <div class="badge">PRIVACY POLICY</div>
-</div>
-<div class="container">
-  <div class="meta">
-    <div class="meta-item"><strong>Effective Date</strong>May 1, 2025</div>
-    <div class="meta-item"><strong>Last Updated</strong>April 2026</div>
-    <div class="meta-item"><strong>Developer</strong>Mohamed Salih</div>
-    <div class="meta-item"><strong>Contact</strong><a href="mailto:runner.main.admin@gmail.com">runner.main.admin@gmail.com</a></div>
+
+<header>
+  <div class="logo-mark">
+    <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
   </div>
-  <div class="summary">
-    <p><strong>Plain-language summary:</strong> Runner is a GPS territory game. We collect your location while you run, your username, and basic profile info to make the game work. We never sell your data. You can delete your account and all your data at any time from within the app.</p>
+  <h1><span>Own-it</span> Privacy Policy</h1>
+  <p class="subtitle">We believe in complete transparency about how your data is handled.</p>
+  <span class="updated-badge">Last updated: May 2026</span>
+</header>
+
+<main>
+
+  <!-- Introduction -->
+  <section>
+    <p>
+      Welcome to <strong>Own-it</strong>, the GPS territory-capture game where you run and cycle
+      real-world loops to claim zones, compete with rivals, and build your crew. This Privacy Policy
+      explains what personal data we collect, why we collect it, how it is stored, and your rights
+      over it. By using Own-it you agree to this policy.
+    </p>
+    <p>
+      Own-it is operated by the Own-it development team. If you have any questions at any point,
+      reach us at <a href="mailto:support@runnerapp.run" style="color:var(--cyan)">support@runnerapp.run</a>.
+    </p>
+    <div class="info-block">
+      <p>
+        Own-it is designed primarily for users in the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain,
+        Oman, and Egypt. We comply with the EU General Data Protection Regulation (GDPR) for users
+        in the European Economic Area, and apply equivalent protections globally.
+      </p>
+    </div>
+  </section>
+
+  <!-- Table of Contents -->
+  <div class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#data-collected">Data We Collect</a></li>
+      <li><a href="#data-not-collected">Data We Do Not Collect</a></li>
+      <li><a href="#how-we-use">How We Use Your Data</a></li>
+      <li><a href="#third-parties">Third-Party Services</a></li>
+      <li><a href="#storage">Data Storage &amp; Retention</a></li>
+      <li><a href="#location">Location Data</a></li>
+      <li><a href="#health">HealthKit &amp; Apple Watch</a></li>
+      <li><a href="#photos">Profile &amp; Feed Photos</a></li>
+      <li><a href="#push">Push Notifications</a></li>
+      <li><a href="#subscriptions">Subscriptions &amp; Payments</a></li>
+      <li><a href="#ads">Advertising</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#your-rights">Your Rights</a></li>
+      <li><a href="#cookies">Cookies &amp; Analytics</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
   </div>
 
-  <h2>1. Who We Are</h2>
-  <p>Runner is a mobile application developed by Mohamed Salih, an independent developer based in the United Arab Emirates. Runner is a GPS-based territory capture game available on iOS. This Privacy Policy explains what personal data we collect, why we collect it, how we use it, and your rights regarding that data. By using Runner, you agree to this policy.</p>
+  <!-- 1. Data We Collect -->
+  <section id="data-collected">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 0 0 10A5 5 0 0 0 12 2zm0 12c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/></svg></span>
+      Data We Collect
+    </h2>
+    <p>We collect only what is needed to operate the app and provide you with a personalised, competitive experience.</p>
 
-  <h2>2. Data We Collect</h2>
-  <h3>Data You Provide Directly</h3>
-  <table>
-    <tr><th>Data</th><th>Why We Collect It</th><th>Required</th></tr>
-    <tr><td>Email address</td><td>Account creation, OTP verification, account recovery</td><td>Yes</td></tr>
-    <tr><td>Username</td><td>Displayed on map, leaderboard, and to other players</td><td>Yes</td></tr>
-    <tr><td>Profile photo</td><td>Shown on map and to friends</td><td>No</td></tr>
-    <tr><td>Country selection</td><td>Shows local landmarks, cycling routes, and speed zones</td><td>Yes</td></tr>
-    <tr><td>Zone color preference</td><td>Colors your territory zones on the map</td><td>Yes</td></tr>
-  </table>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-title">Account</div>
+        <ul>
+          <li>Email address</li>
+          <li>Username (chosen by you)</li>
+          <li>Country selection</li>
+          <li>Language preference (EN / AR)</li>
+          <li>Account creation date</li>
+          <li>Apple ID (if signing in with Apple)</li>
+          <li>Google account name &amp; profile photo (if signing in with Google)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Activity</div>
+        <ul>
+          <li>GPS route coordinates</li>
+          <li>Distance &amp; duration</li>
+          <li>Average and max speed</li>
+          <li>Pace (cycling mode)</li>
+          <li>Zones captured</li>
+          <li>Calories (from Watch)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Game Data</div>
+        <ul>
+          <li>Territory ownership records</li>
+          <li>Crew memberships</li>
+          <li>Private room history</li>
+          <li>Leaderboard rankings</li>
+          <li>Attack / defend events</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Content</div>
+        <ul>
+          <li>Profile photo (optional)</li>
+          <li>Feed post photos (optional)</li>
+          <li>Feed post captions (optional)</li>
+          <li>Friends list</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Device</div>
+        <ul>
+          <li>Push notification token</li>
+          <li>Apple Watch heart rate</li>
+          <li>Apple Watch activity rings</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Subscription</div>
+        <ul>
+          <li>Pro subscription status</li>
+          <li>Subscription tier &amp; renewal date</li>
+          <li>(Payment details handled entirely by Apple)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h3>Location Data</h3>
-  <div class="warn">Location is the core function of Runner. Without it, the app cannot work. We collect your GPS coordinates while you are actively running or cycling to draw your path, detect zone captures, and show your live position to nearby players.</div>
-  <table>
-    <tr><th>Type</th><th>When Collected</th><th>Purpose</th></tr>
-    <tr><td>Precise GPS (foreground)</td><td>While the app is open and you are running</td><td>Draw run path, detect zone loops, show live position</td></tr>
-    <tr><td>Precise GPS (background)</td><td>Only while an active run is in progress</td><td>Continue tracking if you switch apps mid-run</td></tr>
-    <tr><td>Heat map points</td><td>Periodically during a run</td><td>Generate your personal heat map of covered areas</td></tr>
-  </table>
-  <p>We do not collect location when the app is closed or when you are not actively running. Background location stops automatically when your run ends.</p>
+  <!-- 2. Data We Do Not Collect -->
+  <section id="data-not-collected">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"/></svg></span>
+      Data We Do Not Collect
+    </h2>
+    <p>We deliberately avoid collecting data that is not necessary for the app to function:</p>
+    <div class="pill-list">
+      <span class="pill-muted pill">Real name</span>
+      <span class="pill-muted pill">Phone number</span>
+      <span class="pill-muted pill">Payment card details</span>
+      <span class="pill-muted pill">Bank information</span>
+      <span class="pill-muted pill">Contacts / address book</span>
+      <span class="pill-muted pill">Browsing history</span>
+      <span class="pill-muted pill">Other app usage</span>
+      <span class="pill-muted pill">Precise location when app is closed</span>
+    </div>
+  </section>
 
-  <h3>Device and Usage Data</h3>
-  <ul>
-    <li>Motion and fitness data (CoreMotion) — detects running vs cycling. Never stored on our servers.</li>
-    <li>Run statistics — distance, duration, territories captured — stored in your account</li>
-    <li>App interaction data — collected via Firebase Analytics to improve the app</li>
-    <li>Crash reports — collected via Firebase Crashlytics if the app crashes, to fix bugs</li>
-  </ul>
+  <!-- 3. How We Use Your Data -->
+  <section id="how-we-use">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M9 11.75A1.25 1.25 0 1 0 9 14.25 1.25 1.25 0 0 0 9 11.75zm6 0A1.25 1.25 0 1 0 15 14.25 1.25 1.25 0 0 0 15 11.75zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg></span>
+      How We Use Your Data
+    </h2>
 
-  <h3>Payment Data</h3>
-  <p>Runner Pro subscriptions are processed entirely by Apple through the App Store. We never see, store, or process your payment information. Apple's privacy policy governs payment data.</p>
+    <div class="info-block" style="margin-bottom:20px">
+      <p><strong style="color:var(--text)">Authentication methods —</strong> we offer three ways to sign in:</p>
+      <ul style="list-style:none;margin-top:10px;display:flex;flex-direction:column;gap:8px;padding:0">
+        <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--cyan);font-weight:700;flex-shrink:0">Apple</span> We receive your name and email from Apple. Apple may anonymize your email using their Private Relay service.</li>
+        <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--cyan);font-weight:700;flex-shrink:0">Google</span> We receive your name, email, and profile photo from Google.</li>
+        <li style="display:flex;gap:10px;align-items:flex-start"><span style="color:var(--cyan);font-weight:700;flex-shrink:0">Email</span> We send a one-time magic sign-in link to your email via Resend. No password is ever stored.</li>
+      </ul>
+    </div>
 
-  <h2>3. How We Use Your Data</h2>
-  <table>
-    <tr><th>Use</th><th>Legal Basis</th></tr>
-    <tr><td>Run the game — zone capture, leaderboard, live map</td><td>Contract (providing the service you signed up for)</td></tr>
-    <tr><td>Show your username and zones to other players</td><td>Contract + Consent</td></tr>
-    <tr><td>Send OTP verification emails</td><td>Contract (required for account security)</td></tr>
-    <tr><td>Send push notifications</td><td>Consent (you can disable in iOS Settings)</td></tr>
-    <tr><td>Improve the app and fix bugs</td><td>Legitimate interests</td></tr>
-    <tr><td>Comply with legal obligations</td><td>Legal obligation</td></tr>
-  </table>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Purpose</th>
+            <th>Data used</th>
+            <th>Legal basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account creation &amp; authentication</td>
+            <td>Email, username</td>
+            <td>Contract performance</td>
+          </tr>
+          <tr>
+            <td>Magic link email sign-in (email users)</td>
+            <td>Email address</td>
+            <td>Contract performance</td>
+          </tr>
+          <tr>
+            <td>GPS territory capture gameplay</td>
+            <td>Live GPS coordinates</td>
+            <td>Contract performance</td>
+          </tr>
+          <tr>
+            <td>Displaying live positions to other players during runs</td>
+            <td>GPS coordinates (active run only)</td>
+            <td>Contract performance</td>
+          </tr>
+          <tr>
+            <td>Run &amp; cycle stat tracking</td>
+            <td>Distance, time, speed, pace, GPS path</td>
+            <td>Contract performance</td>
+          </tr>
+          <tr>
+            <td>Leaderboard rankings</td>
+            <td>Username, country, activity stats</td>
+            <td>Legitimate interest</td>
+          </tr>
+          <tr>
+            <td>Community feed posts</td>
+            <td>Username, photo (optional), caption (optional), activity stats</td>
+            <td>Consent (opt-in per post)</td>
+          </tr>
+          <tr>
+            <td>Friends &amp; crew features</td>
+            <td>Username, crew memberships</td>
+            <td>Contract performance</td>
+          </tr>
+          <tr>
+            <td>Push notifications (zone attacks, streaks, events)</td>
+            <td>Device token</td>
+            <td>Consent (system prompt)</td>
+          </tr>
+          <tr>
+            <td>Pro subscription management</td>
+            <td>Subscription status</td>
+            <td>Contract performance</td>
+          </tr>
+          <tr>
+            <td>Apple Watch integration</td>
+            <td>Heart rate, activity data</td>
+            <td>Consent (HealthKit prompt)</td>
+          </tr>
+          <tr>
+            <td>App improvement &amp; debugging</td>
+            <td>Anonymised crash logs (via Xcode / Firebase)</td>
+            <td>Legitimate interest</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <h2>4. Who We Share Your Data With</h2>
-  <p>We do not sell your data. We share limited data only with service providers who help us run the app:</p>
-  <table>
-    <tr><th>Provider</th><th>Purpose</th><th>Privacy Policy</th></tr>
-    <tr><td>Google Firebase</td><td>Database, authentication, storage, analytics, crash reporting</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
-    <tr><td>Mapbox</td><td>3D map rendering</td><td><a href="https://www.mapbox.com/legal/privacy">mapbox.com/legal/privacy</a></td></tr>
-    <tr><td>Apple App Store</td><td>App distribution, subscription billing</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
-  </table>
-  <p>Your username, zone territories, and leaderboard position are visible to other Runner players by design — this is the core social feature. Your email address is never visible to other players.</p>
+    <div class="info-block" style="margin-top:20px">
+      <p>We never sell your personal data to any third party. We never use your data for advertising profiling. Your GPS data is used solely to power the game, track your activities, and display territory on the map.</p>
+    </div>
+  </section>
 
-  <h2>5. Data Retention</h2>
-  <table>
-    <tr><th>Data Type</th><th>Retention Period</th></tr>
-    <tr><td>Account data (username, email, profile)</td><td>Until you delete your account</td></tr>
-    <tr><td>Territory zones</td><td>Automatically decay and delete after 14 days of inactivity</td></tr>
-    <tr><td>Location / heat map points</td><td>90 days, then automatically deleted</td></tr>
-    <tr><td>Run history</td><td>Until you delete your account</td></tr>
-    <tr><td>Live presence / location</td><td>Deleted automatically when your run ends (within minutes)</td></tr>
-    <tr><td>Deleted accounts</td><td>All data permanently deleted within 30 days</td></tr>
-  </table>
+  <!-- 4. Third-Party Services -->
+  <section id="third-parties">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
+      Third-Party Services
+    </h2>
+    <p>Own-it integrates with the following third-party services. Each operates under its own privacy policy.</p>
 
-  <h2>6. Your Rights</h2>
-  <ul>
-    <li><strong style="color:rgba(255,255,255,0.8)">Access</strong> — request a copy of all data we hold about you</li>
-    <li><strong style="color:rgba(255,255,255,0.8)">Deletion</strong> — delete your account in the app: Profile → Settings → Delete Account</li>
-    <li><strong style="color:rgba(255,255,255,0.8)">Correction</strong> — update your username, photo, or country in the app at any time</li>
-    <li><strong style="color:rgba(255,255,255,0.8)">Portability</strong> — request your data in a portable format by emailing us</li>
-    <li><strong style="color:rgba(255,255,255,0.8)">Withdraw consent</strong> — disable location or notifications at any time in iOS Settings</li>
-  </ul>
-  <p>To exercise any right, email us at <a href="mailto:runner.main.admin@gmail.com">runner.main.admin@gmail.com</a>. We will respond within 30 days.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Provider</th>
+            <th>What data they receive</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple Sign In</td>
+            <td>Apple Inc.</td>
+            <td>Name, email (may be anonymized by Apple)</td>
+            <td>Authentication</td>
+          </tr>
+          <tr>
+            <td>Google Sign In</td>
+            <td>Google LLC</td>
+            <td>Name, email, profile photo</td>
+            <td>Authentication</td>
+          </tr>
+          <tr>
+            <td>Firebase Auth</td>
+            <td>Google LLC</td>
+            <td>Email address, auth tokens</td>
+            <td>Secure user authentication</td>
+          </tr>
+          <tr>
+            <td>Firebase Firestore</td>
+            <td>Google LLC</td>
+            <td>User profiles, game data, feed posts</td>
+            <td>Database storage</td>
+          </tr>
+          <tr>
+            <td>Firebase Storage</td>
+            <td>Google LLC</td>
+            <td>Profile photos, feed photos</td>
+            <td>Media file storage</td>
+          </tr>
+          <tr>
+            <td>Mapbox</td>
+            <td>Mapbox Inc.</td>
+            <td>Approximate location for map tile requests</td>
+            <td>Rendering the map</td>
+          </tr>
+          <tr>
+            <td>Resend</td>
+            <td>Resend Inc.</td>
+            <td>Email address (magic link delivery only)</td>
+            <td>Transactional email — magic link sign-in</td>
+          </tr>
+          <tr>
+            <td>Google AdMob</td>
+            <td>Google LLC</td>
+            <td>Device identifiers (free users only, opt-in rewarded ads)</td>
+            <td>Advertising — optional rewarded ads for free users</td>
+          </tr>
+          <tr>
+            <td>Apple HealthKit</td>
+            <td>Apple Inc.</td>
+            <td>Heart rate, calories — processed on device only</td>
+            <td>Workout stats, saving workouts to Health app</td>
+          </tr>
+          <tr>
+            <td>Apple StoreKit 2</td>
+            <td>Apple Inc.</td>
+            <td>Subscription receipt (opaque, validated by Apple)</td>
+            <td>Pro subscription management</td>
+          </tr>
+          <tr>
+            <td>Apple Push Notification Service (APNs)</td>
+            <td>Apple Inc.</td>
+            <td>Device push token</td>
+            <td>Delivering in-app notifications</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <h2>7. Children's Privacy</h2>
-  <p>Runner is not directed at children under 13. We do not knowingly collect personal data from children under 13. If you believe a child under 13 has created an account, contact us immediately and we will delete the account and all associated data.</p>
+    <div class="info-block">
+      <p>
+        All Google Firebase data is stored in Google Cloud data centers. Google LLC is a certified
+        processor under GDPR. For Firebase's privacy policy visit
+        <a href="https://firebase.google.com/support/privacy" style="color:var(--cyan)" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.
+        For Mapbox visit <a href="https://www.mapbox.com/legal/privacy" style="color:var(--cyan)" target="_blank" rel="noopener">mapbox.com/legal/privacy</a>.
+      </p>
+    </div>
+  </section>
 
-  <h2>8. Data Security</h2>
-  <ul>
-    <li>All data is encrypted in transit using TLS/HTTPS</li>
-    <li>Firebase Authentication handles all password management — passwords are never stored in plain text</li>
-    <li>Firestore security rules restrict data so users can only access their own records</li>
-    <li>OTP email verification is required for all new accounts</li>
-  </ul>
+  <!-- 5. Data Storage & Retention -->
+  <section id="storage">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.33C18 2.54 15.48 1 12.67 1c-1.67 0-3.03.72-3.97 1.86L8 3.67 7.3 2.86C6.37 1.72 5 1 3.33 1 .52 1-2 2.54-2 4.67c0 .46.1.89.18 1.33H-2c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h22c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/></svg></span>
+      Data Storage &amp; Retention
+    </h2>
 
-  <h2>9. International Data Transfers</h2>
-  <p>Runner uses Google Firebase, which may store data on servers in the United States and other countries. Google Firebase complies with standard contractual clauses and appropriate transfer mechanisms. By using Runner, you consent to this transfer.</p>
+    <p>All data is stored on Google Cloud infrastructure (Firebase). Here is how long we retain each category:</p>
 
-  <h2>10. Location Permissions</h2>
-  <table>
-    <tr><th>Permission</th><th>When Asked</th><th>Why</th></tr>
-    <tr><td>Location When In Use</td><td>First time you open the map</td><td>Core game function — track your run and capture zones</td></tr>
-    <tr><td>Location Always</td><td>Optional, never required</td><td>Allows background tracking during runs</td></tr>
-  </table>
-  <p>You can revoke location permission at any time in iOS Settings → Runner → Location. Without location, map and run tracking will not function.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Data category</th>
+            <th>Retention period</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account data (email, username, profile)</td>
+            <td>Until you delete your account</td>
+          </tr>
+          <tr>
+            <td>GPS run / cycle data &amp; stats</td>
+            <td>Until you delete your account or individual runs</td>
+          </tr>
+          <tr>
+            <td>Territory &amp; game state</td>
+            <td>Until you delete your account</td>
+          </tr>
+          <tr>
+            <td>Feed posts &amp; photos</td>
+            <td>Until deleted by you, or when your account is deleted</td>
+          </tr>
+          <tr>
+            <td>Magic link tokens</td>
+            <td>10 minutes (auto-expired in Firestore)</td>
+          </tr>
+          <tr>
+            <td>Push notification tokens</td>
+            <td>Until you disable notifications or delete account</td>
+          </tr>
+          <tr>
+            <td>Subscription status</td>
+            <td>Until subscription lapses or account is deleted</td>
+          </tr>
+          <tr>
+            <td>Anonymised crash / performance logs</td>
+            <td>90 days (Firebase Crashlytics default)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <h2>11. Push Notifications</h2>
-  <p>Runner may send notifications for zone attacks, zone captures, friend requests, streak reminders, and heist alerts. You can disable all notifications in iOS Settings → Notifications → Runner. Attack alert notifications require Runner Pro.</p>
+    <div class="info-block">
+      <p>When you delete your account, we initiate deletion of all personal data from Firebase Firestore and Firebase Storage within 30 days. Residual backups may persist for up to 60 days before full purge.</p>
+    </div>
+  </section>
 
-  <h2>12. Changes to This Policy</h2>
-  <p>We may update this policy from time to time. If we make significant changes, we will notify you via a push notification or in-app message. Your continued use of Runner after changes are posted constitutes your acceptance of the updated policy.</p>
+  <!-- 6. Location Data -->
+  <section id="location">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg></span>
+      Location Data
+    </h2>
+    <p>Location is central to how Own-it works. Here is exactly how we use it:</p>
 
-  <h2>13. Contact Us</h2>
-  <div class="contact">
-    <p style="color:rgba(255,255,255,0.55); font-size:14px;">For privacy requests, data deletion, or questions about this policy:</p>
-    <ul style="margin-top:12px;">
-      <li>Email: <a href="mailto:runner.main.admin@gmail.com">runner.main.admin@gmail.com</a></li>
-      <li>Developer: Mohamed Salih</li>
-      <li>Location: United Arab Emirates</li>
-      <li>Response time: within 30 days</li>
+    <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="card">
+        <div class="card-title">During an active run or cycle</div>
+        <ul>
+          <li>Continuous GPS tracking to draw your route</li>
+          <li>Territory zone capture detection</li>
+          <li>Your live position is shown on the shared map to other active players</li>
+          <li>Background location used to continue tracking if you switch apps</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">When app is open (not running)</div>
+        <ul>
+          <li>Approximate location to centre the map</li>
+          <li>Show nearby territories and zones</li>
+          <li>Not sent to other users</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-block">
+      <p>GPS coordinates from completed runs are stored as part of your run history in Firebase Firestore. We do not sell or share location history with advertisers. You can delete individual runs or your entire account to remove all stored coordinates.</p>
+    </div>
+  </section>
+
+  <!-- 7. HealthKit & Apple Watch -->
+  <section id="health">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></span>
+      HealthKit &amp; Apple Watch
+    </h2>
+    <p>
+      If you connect an Apple Watch, Own-it requests access to HealthKit to read heart rate and
+      activity data during workouts, and to save completed runs as workouts in the Health app.
+    </p>
+    <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="card">
+        <div class="card-title">What we read</div>
+        <ul>
+          <li>Heart rate (live, during run)</li>
+          <li>Active calories</li>
+          <li>Activity ring data</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">What we write</div>
+        <ul>
+          <li>Workout records (distance, time, calories)</li>
+          <li>Saved to your Apple Health app</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-block">
+      <p>
+        HealthKit data is processed on your device and used only to display live stats during your
+        run. We do not upload raw HealthKit data to our servers. Apple enforces strict HealthKit
+        usage rules — we cannot use this data for advertising or share it with third parties.
+      </p>
+    </div>
+  </section>
+
+  <!-- 8. Profile & Feed Photos -->
+  <section id="photos">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg></span>
+      Profile &amp; Feed Photos
+    </h2>
+    <p>Uploading a profile photo or posting to the community feed is entirely optional.</p>
+    <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="card">
+        <div class="card-title">Profile photo</div>
+        <ul>
+          <li>Stored in Firebase Storage</li>
+          <li>Visible to all Own-it users on the map and leaderboard</li>
+          <li>Replaceable or removable any time from Profile settings</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Feed posts</div>
+        <ul>
+          <li>Photo and caption are optional per post</li>
+          <li>Stored in Firebase Storage and Firestore</li>
+          <li>Visible to all users in the community feed</li>
+          <li>You can delete individual posts at any time</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-block">
+      <p>Do not upload photos that include identifiable third parties without their consent. By uploading a photo you confirm you hold the rights to share it.</p>
+    </div>
+  </section>
+
+  <!-- 9. Push Notifications -->
+  <section id="push">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg></span>
+      Push Notifications
+    </h2>
+    <p>Own-it sends push notifications for the following events:</p>
+    <div class="pill-list">
+      <span class="pill">Zone under attack</span>
+      <span class="pill">Zone captured</span>
+      <span class="pill">Streak reminders</span>
+      <span class="pill">Weekly events</span>
+      <span class="pill">Crew invitations</span>
+      <span class="pill">Friend requests</span>
+    </div>
+    <p style="margin-top:16px">
+      You will be asked for notification permission during onboarding. You can change this at any
+      time in your iPhone's Settings → Own-it → Notifications. Disabling notifications does not
+      affect gameplay — you will still receive in-app alerts.
+    </p>
+  </section>
+
+  <!-- 10. Subscriptions & Payments -->
+  <section id="subscriptions">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg></span>
+      Subscriptions &amp; Payments
+    </h2>
+    <p>
+      Own-it Pro is available as a monthly or yearly subscription. All payments are processed entirely
+      by Apple through the App Store using StoreKit 2. <strong>Own-it never sees, stores, or handles
+      your payment card details.</strong>
+    </p>
+    <p>
+      We receive only a subscription status receipt from Apple (active / expired / trial) to unlock
+      Pro features. Subscription management, refunds, and cancellations are handled through your
+      Apple ID account settings.
+    </p>
+  </section>
+
+  <!-- 11. Advertising -->
+  <section id="ads">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg></span>
+      Advertising
+    </h2>
+    <p>
+      Free users of Own-it may encounter <strong>optional rewarded ads</strong> powered by
+      <strong>Google AdMob</strong>. These ads are entirely opt-in — you actively choose to watch
+      them in exchange for in-game rewards (such as bonus points or zone boosts). We never show
+      interstitial or banner ads that interrupt gameplay.
+    </p>
+    <div class="card-grid" style="grid-template-columns:1fr 1fr">
+      <div class="card">
+        <div class="card-title">Free Users</div>
+        <ul>
+          <li>Optional rewarded ads only</li>
+          <li>You tap "Watch ad" to earn a reward</li>
+          <li>Never shown automatically</li>
+          <li>AdMob may collect device identifiers</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title">Pro Subscribers</div>
+        <ul>
+          <li>No ads of any kind</li>
+          <li>AdMob SDK inactive</li>
+          <li>No device identifiers collected for ads</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-block">
+      <p>
+        AdMob may use device identifiers for ad personalization where permitted by your device
+        settings. You can opt out at any time in <strong>Settings → Privacy &amp; Security →
+        Tracking</strong> on your iPhone. Opting out means you may still see ads but they will
+        not be personalized to your interests. For AdMob's privacy policy visit
+        <a href="https://policies.google.com/privacy" style="color:var(--cyan)" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- 12. Children -->
+  <section id="children">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"/></svg></span>
+      Children
+    </h2>
+    <p>
+      Own-it is not directed at children under 13 years of age. We do not knowingly collect personal
+      data from children under 13. If you are a parent or guardian and believe your child has provided
+      us with personal information, please contact us at
+      <a href="mailto:support@runnerapp.run" style="color:var(--cyan)">support@runnerapp.run</a>
+      and we will delete the data promptly.
+    </p>
+    <p>
+      Users between 13 and 17 should obtain parental consent before creating an account. GPS-based
+      features that share live location with other players require particularly careful parental
+      consideration for minors.
+    </p>
+  </section>
+
+  <!-- 12. Your Rights -->
+  <section id="your-rights">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg></span>
+      Your Rights
+    </h2>
+    <p>
+      Under GDPR and equivalent regional laws, you have the following rights regarding your personal data.
+      All can be exercised by contacting us at
+      <a href="mailto:support@runnerapp.run" style="color:var(--cyan)">support@runnerapp.run</a> or
+      through in-app settings where available:
+    </p>
+
+    <ul class="rights-list">
+      <li>
+        <span class="check"><svg viewBox="0 0 12 12"><path d="M1 6l3.5 3.5L11 2"/><path d="M1 6l3.5 3.5L11 2" stroke="#00E5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong style="color:var(--text)">Access</strong> — request a copy of all personal data we hold about you</span>
+      </li>
+      <li>
+        <span class="check"><svg viewBox="0 0 12 12"><path d="M1 6l3.5 3.5L11 2" stroke="#00E5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong style="color:var(--text)">Deletion</strong> — delete your account and all associated data from the app</span>
+      </li>
+      <li>
+        <span class="check"><svg viewBox="0 0 12 12"><path d="M1 6l3.5 3.5L11 2" stroke="#00E5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong style="color:var(--text)">Export</strong> — download your run history and activity data</span>
+      </li>
+      <li>
+        <span class="check"><svg viewBox="0 0 12 12"><path d="M1 6l3.5 3.5L11 2" stroke="#00E5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong style="color:var(--text)">Correction</strong> — update your username, country, or language preference</span>
+      </li>
+      <li>
+        <span class="check"><svg viewBox="0 0 12 12"><path d="M1 6l3.5 3.5L11 2" stroke="#00E5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong style="color:var(--text)">Opt out of feed</strong> — choose not to post to or appear in the community feed</span>
+      </li>
+      <li>
+        <span class="check"><svg viewBox="0 0 12 12"><path d="M1 6l3.5 3.5L11 2" stroke="#00E5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong style="color:var(--text)">Notification opt-out</strong> — disable push notifications via iOS Settings</span>
+      </li>
+      <li>
+        <span class="check"><svg viewBox="0 0 12 12"><path d="M1 6l3.5 3.5L11 2" stroke="#00E5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong style="color:var(--text)">Restrict processing</strong> — object to processing based on legitimate interest</span>
+      </li>
+      <li>
+        <span class="check"><svg viewBox="0 0 12 12"><path d="M1 6l3.5 3.5L11 2" stroke="#00E5FF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong style="color:var(--text)">Lodge a complaint</strong> — complain to your local data protection authority (EU users: your national DPA)</span>
+      </li>
     </ul>
-  </div>
-</div>
-<div class="footer">© 2025 Runner · Built in the UAE · <a href="mailto:runner.main.admin@gmail.com">runner.main.admin@gmail.com</a></div>
+
+    <div class="info-block">
+      <p>We will respond to all data rights requests within 30 days. For account deletion, use Profile → Settings → Delete Account in the app, or email us and we will action it within 5 business days.</p>
+    </div>
+  </section>
+
+  <!-- 13. Cookies & Analytics -->
+  <section id="cookies">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M21.598 11.064a1.006 1.006 0 0 0-.854-.172A2.938 2.938 0 0 1 20 11c-1.654 0-3-1.346-3.003-2.937.005-.034.016-.136.017-.17a1.001 1.001 0 0 0-1.224-1.017A3.016 3.016 0 0 1 15 7c-1.654 0-3-1.346-3-3 0-.171.017-.34.05-.507A1 1 0 0 0 11.05 2.1 10.016 10.016 0 0 0 2 12c0 5.514 4.486 10 10 10s10-4.486 10-10c0-.249-.015-.497-.041-.743a1.005 1.005 0 0 0-.361-.193z"/></svg></span>
+      Cookies &amp; Analytics
+    </h2>
+    <p>
+      Own-it is a native iOS app and does not use browser cookies. Firebase may use persistent
+      identifiers for analytics and crash reporting. These identifiers are not linked to your email
+      or personal profile and are used solely to measure app stability and performance.
+    </p>
+    <p>
+      Free users may encounter optional rewarded ads via Google AdMob. AdMob may use device
+      identifiers for ad personalization subject to your ATT (App Tracking Transparency) consent.
+      If you decline tracking when prompted, or if you are a Pro subscriber, AdMob does not collect
+      identifiers for personalization. We do not use any other ad networks or behavioural tracking.
+    </p>
+  </section>
+
+  <!-- 14. Changes -->
+  <section id="changes">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg></span>
+      Changes to This Policy
+    </h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes to the app or applicable
+      law. When we make material changes we will notify you via a push notification or an in-app
+      banner, and update the "Last updated" date at the top of this page.
+    </p>
+    <p>
+      Continued use of Own-it after the effective date of a revised policy constitutes your acceptance
+      of the changes. If you do not agree with a change, you may delete your account before the
+      change takes effect.
+    </p>
+  </section>
+
+  <!-- 15. Contact -->
+  <section id="contact">
+    <h2>
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+      Contact Us
+    </h2>
+    <p>For any privacy-related questions, data requests, or concerns, please reach us at:</p>
+    <div class="contact-card">
+      <p><strong style="color:var(--text)">Own-it Support Team</strong></p>
+      <p>Email: <a href="mailto:support@runnerapp.run">support@runnerapp.run</a></p>
+      <p style="margin-top:12px; font-size:14px;">
+        We aim to respond to all enquiries within 2 business days. For urgent data deletion requests
+        we will confirm receipt within 24 hours and complete deletion within 5 business days.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Own-it. All rights reserved.</p>
+  <p style="margin-top:6px">
+    <a href="mailto:support@runnerapp.run">support@runnerapp.run</a>
+    &nbsp;·&nbsp;
+    Last updated: May 2026
+  </p>
+</footer>
+
 </body>
 </html>
